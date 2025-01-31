@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+
+    width: 100%;
+    height: 100hv;
+    background: rgb(51,51,51);
+    background: linear-gradient(315deg, rgba(51,51,51,1) 30%, rgba(253,246,227,1) 30%, rgba(241,253,227,1) 40%);
+}
+.primary-color {
+    color: #333333;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid red;
+    height:auto;
+    width: 100%;
+    color: red;
+}
+
+.carousel {
+    width: 60%;
+}
+
+.home div img {
+    height: 80vh;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.home-text {
+    position: absolute;
+    color: whitesmoke;
+    z-index:1;
+}
+
+.home-text h1{
+    font-weight: bolder;
+
+}
+.bg-carousel {
+    width: 100%; /* Full width of the screen */
+    height: 100%; /* Full height of the screen */
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat; /* No repetition */
+    background-position: center; /* Center the image */
+    z-index: -1; /* Ensure it stays in the background */
+}
+
+
+nav ul li {
+    transition: 0.1s ease;
+}
+nav ul li:hover {
+    border-radius: 15px;
+    border:2px solid #A3BCCF;
+
+}
+
+.our-cakes-img{
+    width: 95%;
+    height: 90vh;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.text-our-cakes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.our-cakes-container{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.text-our-about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+
+.testing {
+    border: 10px solid blue;
+}
+.testing-1 {
+    border: 10px solid black;
+}
+.testing-2 {
+    border: 10px solid pink;
+}
+.testing-3 {
+    border: 10px solid green;
+}
+.testing-4 {
+    border: 10px solid violet;
+}
