@@ -1,60 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
 }
-
-body{
-
-    width: 100%;
-    height: 100hv;
-    background: rgb(51,51,51);
-    background: linear-gradient(315deg, rgba(51,51,51,1) 30%, rgba(253,246,227,1) 30%, rgba(241,253,227,1) 40%);
-}
-.primary-color {
-    color: #333333;
-}
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 6px solid red;
-    height:auto;
-    width: 100%;
-    color: red;
-}
-
-.carousel {
-    width: 60%;
-}
-
-.home div img {
-    height: 80vh;
-    width: 100%;
-    border-radius: 15px;
-
-}
-
-.home-text {
-    position: absolute;
-    color: whitesmoke;
-    z-index:1;
-}
-
-.home-text h1{
-    font-weight: bolder;
-
-}
-.bg-carousel {
-    width: 100%; /* Full width of the screen */
-    height: 100%; /* Full height of the screen */
-    background-size: contain; /* Ensures the entire image is visible */
-    background-repeat: no-repeat; /* No repetition */
-    background-position: center; /* Center the image */
-    z-index: -1; /* Ensure it stays in the background */
-}
-
-
 nav ul li {
     transition: 0.1s ease;
 }
@@ -64,53 +11,86 @@ nav ul li:hover {
 
 }
 
-.our-cakes-img{
-    width: 95%;
-    height: 90vh;
-    padding: 10px;
-    border-radius: 25px;
+.header-text {
+    padding: 20px;
+    text-align: center;
 }
 
-.text-our-cakes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.our-cakes-container{
+.home {
     height: 100vh;
-    
+}
+.carousel {
+    width: 50%;
+    border: 2px solid red;
+}
+
+
+
+.boarder-guides {
+    border: 2px solid red;
+}
+
+.image-container img {
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+.image-container-our-cakes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image-container-our-cakes img {
+    height: 60vh;
+    width: 90%;
+    border-radius: 15px;
+}
+
+
+
+.order-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    padding: 8px;
+    margin: 5px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #ff4d6d;
+    color: white;
     padding: 10px;
-}
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
 
-.text-our-about-us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    word-wrap: break-word;
-    padding: 10px;
-}
-
-
-.testing {
-    border: 10px solid blue;
-}
-.testing-1 {
-    border: 10px solid black;
-}
-.testing-2 {
-    border: 10px solid pink;
-}
-.testing-3 {
-    border: 10px solid green;
-}
-.testing-4 {
-    border: 10px solid violet;
-}
+  .limited-slots {
+    font-weight: bold;
+    color: red;
+    margin-top: 15px;
+  }
+  
