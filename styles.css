@@ -17,7 +17,7 @@ nav ul li:hover {
 }
 
 .home {
-    height: 100vh;
+    /* height: 100vh; */
 }
 .carousel {
     width: 50%;
@@ -94,3 +94,27 @@ nav ul li:hover {
     margin-top: 15px;
   }
   
+
+  .testimonial-card {
+    display: block;
+    height: auto;
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.testimonial-card:hover {
+    box-shadow: 5px 5px 10px black; /* Adds a red shadow */
+    border: 2px solid black; /* Keeps the black border */
+    border-radius: 15px;
+}
+.testimonial-card img {
+    width: 300px; /* Full width of the screen */
+    height: 300px; /* Full height of the screen */
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat; /* No repetition */
+    background-position: center; /* Center the image */
+}
+
+  .stars {
+    color: gold;
+    font-size: 16px;
+}
