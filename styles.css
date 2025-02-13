@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: whitesmoke;
 }
 
 .background-img {
@@ -25,42 +26,71 @@ nav ul li:hover {
 
 .header-text {
     padding: 20px;
-    text-align: center;
+    text-align: justify;
+    color: grey;z
 }
 
 .home {
-    /* height: 100vh; */
+    height: 100vh;
 }
 .carousel {
     width: 50%;
-    border: 2px solid red;
 }
 
 
+.image-container  {
+    position: sticky;
+    top: 10px; /* Sticks at the top when scrolling */
+    width: 100%; /* Makes it responsive */
+    display: flex;
+    justify-content: end;
+    transform: rotate(-10deg);
 
-.boarder-guides {
-    border: 2px solid red;
 }
-
 .image-container img {
-    height: 500px;
-    width: 100%;
-    border-radius: 15px;
+    width: 700px; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional styling */
+    border-radius: 50px;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+.image-container img:hover {
+    transform: scale(1.1);
 }
 
-
+.home-button {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */    
+}
+.home-button:hover{
+    transform: scale(1.1);
+    background-color:rgb(64, 14, 20);
+}
+.image-container img:hover {
+    transform: scale(1.1);
+}
 
 .image-container-our-cakes {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100vh;
     border-radius: 15px;
+
 }
 
 .image-container-our-cakes img {
     height: 60vh;
     width: 90%;
+    height: 90vh;
     border-radius: 15px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+
+}
+.image-container-our-cakes img:hover {
+    transform: scale(1.1); /* Zooms slightly on hover */
+    z-index: 1; /* Ensures it's above other elements */
+
 }
 
 
@@ -68,7 +98,7 @@ nav ul li:hover {
 .order-section {
     text-align: center;
     padding: 50px 20px;
-    background: #fff;
+    background-color:black ;
   }
   
   form {
@@ -108,6 +138,7 @@ nav ul li:hover {
   
 
   .testimonial-card {
+    width:100%;
     display: block;
     height: auto;
     transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
@@ -119,7 +150,7 @@ nav ul li:hover {
     border-radius: 15px;
 }
 .testimonial-card img {
-    width: 300px; /* Full width of the screen */
+    width: 150px; /* Full width of the screen */
     height: 300px; /* Full height of the screen */
     background-size: contain; /* Ensures the entire image is visible */
     background-repeat: no-repeat; /* No repetition */
