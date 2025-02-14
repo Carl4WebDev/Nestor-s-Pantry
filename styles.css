@@ -119,6 +119,10 @@ nav ul li:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
   }
+
+  .message {
+    height: 100px;
+  }
   
   button {
     background: #ff4d6d;
