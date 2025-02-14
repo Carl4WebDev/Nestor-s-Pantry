@@ -48,7 +48,7 @@ nav ul li:hover {
 
 }
 .image-container img {
-    width: 700px; /* Ensures responsiveness */
+    width: 500px; /* Ensures responsiveness */
     height: auto; /* Maintains aspect ratio */
     border-radius: 10px; /* Optional styling */
     border-radius: 50px;
@@ -82,7 +82,7 @@ nav ul li:hover {
 .image-container-our-cakes img {
     height: 60vh;
     width: 90%;
-    height: 90vh;
+    height: 70vh;
     border-radius: 15px;
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
 
