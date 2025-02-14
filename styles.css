@@ -50,7 +50,7 @@ nav ul li:hover {
 }
 .image-container img {
     position:relative;
-    top: 100px;
+    top: 200px;
     width: 700px; /* Ensures responsiveness */
     border-radius: 50px;
     z-index: -1;
