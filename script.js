@@ -13,3 +13,20 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     window.location.href = messengerUrl; // Redirect user to Messenger
 });
 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var form = event.target;
+    
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById("success-message").style.display = "block";
+            form.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    }).catch(error => alert("Error: " + error));
+});

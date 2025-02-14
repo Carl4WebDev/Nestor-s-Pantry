@@ -14,7 +14,9 @@
     width: 100%;
 }
 
-
+nav {
+    z-index: 1;
+}
 nav ul li {
     transition: 0.1s ease;
 }
@@ -30,6 +32,7 @@ nav ul li:hover {
     color: grey;z
 }
 
+
 .home {
     height: 100vh;
 }
@@ -37,10 +40,9 @@ nav ul li:hover {
     width: 50%;
 }
 
-
 .image-container  {
     position: sticky;
-    top: 10px; /* Sticks at the top when scrolling */
+    top: 200px; /* Sticks at the top when scrolling */
     width: 100%; /* Makes it responsive */
     display: flex;
     justify-content: end;
