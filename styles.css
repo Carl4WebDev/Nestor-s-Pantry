@@ -81,6 +81,8 @@ nav ul li:hover {
     }
     .image-container img {
       max-width: 300px;
+      position:relative;
+      top: 50px;
       height: auto;
     }
   }
