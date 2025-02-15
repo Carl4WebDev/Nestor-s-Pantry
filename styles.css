@@ -63,14 +63,27 @@ nav ul li:hover {
 .image-container img {
     position:relative;
     top: 200px;
-    width: 700px; /* Ensures responsiveness */
+    width:600px ; /* Ensures the image fits within its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
     border-radius: 50px;
+    object-fit: cover;
     z-index: -1;
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
 }
 .image-container img:hover {
     transform: scale(1.1);
 }
+@media (max-width: 400px) {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
 
 .home-button {
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */    
